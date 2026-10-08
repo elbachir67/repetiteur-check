@@ -1,0 +1,222 @@
+{
+ "annotateur": "D",
+ "familles": [
+  {
+   "id": "A",
+   "methode_ok": true,
+   "methode_corrigee": "",
+   "interdite_ok": "both",
+   "exercices": [
+    {
+     "id": "A1",
+     "enonce": "2x + 3 = 1",
+     "type": "retirer",
+     "rem": "2x + 6 = 0"
+    },
+    {
+     "id": "A2",
+     "enonce": "3x − 4 = 6",
+     "type": "entrainement"
+    },
+    {
+     "id": "A3",
+     "enonce": "5x + 4 = 1/2",
+     "type": "entrainement"
+    },
+    {
+     "id": "A4",
+     "enonce": "3x − 2 = x + 5",
+     "type": "entrainement",
+     "rem": "2/3x =- 4"
+    },
+    {
+     "id": "A5",
+     "enonce": "2x + 5 = 5x + 1",
+     "type": "note"
+    },
+    {
+     "id": "A6",
+     "enonce": "6x + 6 = 4x − 2",
+     "type": "entrainement"
+    },
+    {
+     "id": "A7",
+     "enonce": "2x + 7 = x − 6",
+     "type": "note"
+    },
+    {
+     "id": "A8",
+     "enonce": "5x + 3 = 3x − 1/2",
+     "type": "entrainement",
+     "rem": "(x - 2)(3x + 1) = 0"
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "methode_ok": true,
+   "methode_corrigee": "",
+   "interdite_ok": "both",
+   "exercices": [
+    {
+     "id": "B1",
+     "enonce": "7/5 + 2/3",
+     "type": "entrainement"
+    },
+    {
+     "id": "B2",
+     "enonce": "−4/5 − 7/4",
+     "type": "entrainement"
+    },
+    {
+     "id": "B3",
+     "enonce": "−13/7 + 2",
+     "type": "entrainement"
+    },
+    {
+     "id": "B4",
+     "enonce": "−7 + 9/2",
+     "type": "retirer"
+    },
+    {
+     "id": "B5",
+     "enonce": "3/14 + 5/21",
+     "type": "retirer"
+    },
+    {
+     "id": "B6",
+     "enonce": "2/3 − 3/4",
+     "type": "entrainement"
+    },
+    {
+     "id": "B7",
+     "enonce": "5 − 7/8 + 2/3",
+     "type": "note"
+    },
+    {
+     "id": "B8",
+     "enonce": "7/12 + 3/4",
+     "type": "entrainement"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "methode_ok": false,
+   "methode_corrigee": "",
+   "interdite_ok": true,
+   "exercices": [
+    {
+     "id": "C1",
+     "type": "retirer"
+    },
+    {
+     "id": "C2",
+     "type": "retirer"
+    },
+    {
+     "id": "C3",
+     "type": "retirer"
+    },
+    {
+     "id": "C4",
+     "type": "retirer"
+    },
+    {
+     "id": "C5",
+     "type": "retirer"
+    },
+    {
+     "id": "C6",
+     "type": "retirer"
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "methode_ok": true,
+   "methode_corrigee": "",
+   "interdite_ok": "both",
+   "exercices": [
+    {
+     "id": "D1",
+     "enonce": "2x² + 5x − 7 = 0",
+     "type": "entrainement"
+    },
+    {
+     "id": "D2",
+     "enonce": "−3x² + 4x − 1 = 0",
+     "type": "entrainement"
+    },
+    {
+     "id": "D3",
+     "enonce": "x² + x − 1 = 0",
+     "type": "entrainement"
+    },
+    {
+     "id": "D4",
+     "enonce": "x² − 5x + 6 = 0",
+     "type": "note"
+    },
+    {
+     "id": "D5",
+     "enonce": "x² − 7x + 10 = 0",
+     "type": "note"
+    },
+    {
+     "id": "D6",
+     "enonce": "2x² − 3x − 20 = 0",
+     "type": "note"
+    },
+    {
+     "id": "D7",
+     "enonce": "x² − 40x + 300 = 0",
+     "type": "note"
+    },
+    {
+     "id": "D8",
+     "enonce": "5x² + 4x + 3 = 0",
+     "type": "note"
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "methode_ok": true,
+   "methode_corrigee": "",
+   "interdite_ok": "both",
+   "exercices": [
+    {
+     "id": "E1",
+     "enonce": "2x + 3y = 11 ; 4x − 5y = −23",
+     "type": "entrainement"
+    },
+    {
+     "id": "E2",
+     "enonce": "x + y = 7 ; x − y = 1",
+     "type": "entrainement"
+    },
+    {
+     "id": "E3",
+     "enonce": "3x + 2y = 12 ; x − y = 1",
+     "type": "entrainement"
+    },
+    {
+     "id": "E4",
+     "enonce": "2x − y = 3 ; x + 3y = 5",
+     "type": "entrainement"
+    },
+    {
+     "id": "E5",
+     "enonce": "5x + 2y = 16 ; 3x − 4y = −6",
+     "type": "note"
+    },
+    {
+     "id": "E6",
+     "enonce": "x + 2y = 8 ; 3x − y = 3",
+     "type": "note"
+    }
+   ]
+  }
+ ]
+}

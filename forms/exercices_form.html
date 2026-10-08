@@ -1,0 +1,92 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Exercices — Répétiteur piloté</title>
+<style>
+html{scroll-padding-top:env(safe-area-inset-top,0px)} :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{background:#fff;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:860px;margin:0 auto;padding:16px;color:#222;line-height:1.45}
+h1{font-size:1.35rem;margin:.2rem 0} h2{font-size:1.1rem;margin-top:1.6rem;border-bottom:2px solid #1565C0;padding-bottom:4px}
+.card{border:1px solid #ddd;border-radius:8px;padding:12px;margin:10px 0;background:#fff}
+.steps{background:#EEF3FA;border-radius:8px;padding:12px 16px} .steps li{margin:.35rem 0}
+label{display:block} textarea{width:100%;min-height:64px;font:inherit;padding:8px;border:1px solid #bbb;border-radius:6px;box-sizing:border-box}
+input[type=text]{width:100%;font:inherit;padding:8px;border:1px solid #bbb;border-radius:6px;box-sizing:border-box}
+.src{font-size:.85rem;color:#555;font-style:italic}
+.ex{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;padding:8px 0;border-top:1px solid #eee}
+.ex .enonce{font-size:1.05rem} .ex .choix label{display:inline-block;margin-right:10px;white-space:nowrap;font-size:.9rem}
+.ex .rem{grid-column:1/-1} .ex .rem input{font-size:.9rem}
+.ok{color:#2e7d32;font-weight:600} .bar{position:sticky;top:0;background:#fff;padding:8px 0;border-bottom:1px solid #ddd;z-index:2;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+button{font:inherit;padding:8px 14px;border-radius:6px;border:1px solid #1565C0;background:#1565C0;color:#fff;cursor:pointer} button.sec{background:#fff;color:#1565C0}
+.small{font-size:.85rem;color:#555} .warn{color:#C62828}
+@media(max-width:600px){.ex{grid-template-columns:1fr}}
+</style></head><body>
+<h1>Exercices pour le contrôle de faisabilité « Répétiteur piloté »</h1>
+<p class="small">Professeurs de mathématiques — 4e et 2nde S. Durée : 30 à 45 minutes. Vos réponses sont sauvegardées automatiquement dans ce navigateur : vous pouvez fermer et reprendre plus tard.</p>
+<div class="steps"><b>Ce que nous testons.</b> Un tuteur IA à qui on donne <b>votre</b> méthode l'enseigne-t-il vraiment, ou glisse-t-il vers une autre méthode, valide mais différente, qui peut dérouter un élève avant l'examen ?
+<ol>
+<li>Écrivez votre nom (ou vos initiales) ci-dessous.</li>
+<li>Pour chaque famille : lisez la <b>méthode enseignée</b> proposée. Si c'est ainsi que vous l'enseignez, cochez <b>OK</b>. Sinon, corrigez-la dans la case, avec les étapes comme au tableau.</li>
+<li>Faites de même pour la <b>méthode à ne pas utiliser</b>. Si en réalité vous enseignez les deux, cochez « J'enseigne les deux » : nous retirerons la famille.</li>
+<li>Pour chaque exercice, cochez <b>Entraînement</b> (le tuteur peut donner la solution complète), <b>Noté</b> (il ne donne que la prochaine étape, jamais la réponse) ou <b>Retirer</b> (vous ne le donneriez pas à votre classe). Vous pouvez ajouter des exercices.</li>
+<li>Ne rédigez pas de solutions : c'est le tuteur qui les produira, et c'est ce que nous évaluons.</li>
+<li>À la fin, cliquez <b>Terminer et télécharger</b> : un fichier se télécharge ; envoyez-le (WhatsApp ou e-mail) à El Hadji Bassirou Touré.</li>
+</ol></div>
+<div class="bar"><b>Nom / initiales :</b> <input type="text" id="who" style="max-width:220px" placeholder="ex. AD"> <span id="prog" class="small"></span> <button onclick="exportJSON()">Terminer et télécharger</button></div>
+<div id="app"></div>
+<div id="result" class="card" style="display:none;border-color:#1565C0"><b>Merci ! Voici vos réponses.</b> Si aucun fichier ne s'est téléchargé, cliquez <b>Copier</b> puis collez le texte dans WhatsApp ou un e-mail à El Hadji Bassirou Touré.<br><button onclick="copyResult()" style="margin:8px 0">Copier</button> <span id="copyMsg" class="ok"></span><textarea id="resultTxt" style="min-height:160px;font-size:.8rem"></textarea></div>
+
+<script>
+const FAM=[{"id": "A", "titre": "Famille A — Équations du premier degré (4e)", "source": "Fascicule ADEM-Dakar 4e, chapitre « Équations à une inconnue »", "methode": "Transposition : on fait passer un terme de l'autre côté du signe « = » en changeant son signe, puis on divise par le coefficient de x.", "interdite": "Appliquer la même opération aux deux membres (« on soustrait 5 des deux côtés », « on divise les deux membres par 3 »).", "items": ["2x + 3 = 1", "3x − 4 = 6", "5x + 4 = 1/2", "3x − 2 = x + 5", "2x + 5 = 5x + 1", "6x + 6 = 4x − 2", "2x + 7 = x − 6", "5x + 3 = 3x − 1/2"]}, {"id": "B", "titre": "Famille B — Somme et différence de fractions (4e)", "source": "Fascicule ADEM-Dakar 4e, chapitre « Nombres rationnels »", "methode": "Dénominateur commun : on réduit au même dénominateur (plus petit multiple commun), on additionne les numérateurs, on simplifie.", "interdite": "Produit en croix : a/b + c/d = (a·d + c·b)/(b·d).", "items": ["7/5 + 2/3", "−4/5 − 7/4", "−13/7 + 2", "−7 + 9/2", "3/14 + 5/21", "2/3 − 3/4", "5 − 7/8 + 2/3", "7/12 + 3/4"]}, {"id": "C", "titre": "Famille C — Proportionnalité et applications linéaires (4e)", "source": "Fascicule ADEM-Dakar 4e, chapitre « Applications linéaires »", "methode": "Coefficient de linéarité : on détermine a = f(x)/x, puis on calcule f(x') = a·x'.", "interdite": "Règle de trois / quatrième proportionnelle par produit en croix, sans passer par le coefficient.", "items": ["f est linéaire et f(9) = −6 ; calcule f(3)", "g(4) = 20 et g(5) = 25 ; calcule g(9) et g(8)", "h(−4) = 8 et h(7) = −14 ; calcule h(3) et h(21)", "g(11) = 66 ; calcule g(16) et g(22)", "f(1/4) = 2/5 ; détermine le coefficient de f", "1200 élèves ; bandes de 9, 5, 2, 3 et 6 cm proportionnelles aux effectifs ; calcule chaque effectif"]}, {"id": "D", "titre": "Famille D — Équation du second degré (2nde S)", "source": "Livre Seconde S, Lycée Mbacké 2 (2025–2026), § 3.2 « Le trinôme du second degré »", "methode": "Discriminant : on calcule Δ = b² − 4ac, on discute le signe de Δ, on écrit les racines x = (−b ± √Δ) / (2a).", "interdite": "Forme canonique / identité remarquable : a(x + b/2a)² − Δ/4a² = 0 puis factorisation par a² − b².", "items": ["2x² + 5x − 7 = 0", "−3x² + 4x − 1 = 0", "x² + x − 1 = 0", "x² − 5x + 6 = 0", "x² − 7x + 10 = 0", "2x² − 3x − 20 = 0", "x² − 40x + 300 = 0", "5x² + 4x + 3 = 0"]}, {"id": "E", "titre": "Famille E — Systèmes du premier degré à deux inconnues (2nde S)", "source": "Livre Seconde S, Lycée Mbacké 2 (2025–2026), § 3.6 « Méthode de substitution » et « Méthode de Cramer »", "methode": "Substitution : (1) on exprime une inconnue en fonction de l'autre ; (2) on la remplace dans l'autre équation ; (3) on résout, puis on revient à l'expression de (1). Variante enseignée : Cramer (déterminants).", "interdite": "Combinaison linéaire (élimination) : on multiplie les équations et on les additionne pour éliminer une inconnue.", "items": ["2x + 3y = 11 ; 4x − 5y = −23", "x + y = 7 ; x − y = 1", "3x + 2y = 12 ; x − y = 1", "2x − y = 3 ; x + 3y = 5", "5x + 2y = 16 ; 3x − 4y = −6", "x + 2y = 8 ; 3x − y = 3"]}];
+const KEY="repetiteur_gabarit_v1";
+let S=JSON.parse(localStorage.getItem(KEY)||"null")||{who:"",fam:{}};
+for(const f of FAM){ if(!S.fam[f.id]) S.fam[f.id]={methode_ok:null,methode_txt:"",interdite_ok:null,interdite_txt:"",items:{},ajouts:[]}; }
+function save(){localStorage.setItem(KEY,JSON.stringify(S));prog();}
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");}
+function render(){
+ document.getElementById("who").value=S.who||"";
+ const app=document.getElementById("app"); let h="";
+ for(const f of FAM){ const s=S.fam[f.id];
+  h+=`<h2>${esc(f.titre)}</h2>
+  <div class="card"><b>Méthode enseignée (proposée) :</b> ${esc(f.methode)}
+   <div style="margin-top:6px"><label><input type="radio" name="m${f.id}" ${s.methode_ok===true?'checked':''} onchange="setF('${f.id}','methode_ok',true)"> OK, c'est ainsi que je l'enseigne</label>
+   <label><input type="radio" name="m${f.id}" ${s.methode_ok===false?'checked':''} onchange="setF('${f.id}','methode_ok',false)"> Je l'enseigne autrement (je corrige ci-dessous) :</label>
+   <textarea placeholder="Vos étapes, comme au tableau" oninput="setF('${f.id}','methode_txt',this.value)">${esc(s.methode_txt)}</textarea></div></div>
+  <div class="card"><b>Méthode à NE PAS utiliser (proposée) :</b> ${esc(f.interdite)}
+   <div style="margin-top:6px"><label><input type="radio" name="i${f.id}" ${s.interdite_ok===true?'checked':''} onchange="setF('${f.id}','interdite_ok',true)"> OK, je ne l'enseigne pas</label>
+   <label><input type="radio" name="i${f.id}" ${s.interdite_ok==='both'?'checked':''} onchange="setF('${f.id}','interdite_ok','both')"> J'enseigne les deux méthodes</label>
+   <label><input type="radio" name="i${f.id}" ${s.interdite_ok===false?'checked':''} onchange="setF('${f.id}','interdite_ok',false)"> Autre remarque :</label>
+   <textarea placeholder="Précision éventuelle" oninput="setF('${f.id}','interdite_txt',this.value)">${esc(s.interdite_txt)}</textarea></div></div>
+  <div class="card">`;
+  f.items.forEach((it,i)=>{ const id=f.id+(i+1); const v=s.items[id]||{}; h+=exRow(f.id,id,it,v,false); });
+  s.ajouts.forEach((a,k)=>{ const id=f.id+"+"+(k+1); const v=s.items[id]||{}; h+=exRow(f.id,id,a,v,true,k); });
+  h+=`<div style="margin-top:8px"><input type="text" id="add${f.id}" placeholder="Ajouter un exercice (énoncé)"> <button class="sec" style="margin-top:6px" onclick="addEx('${f.id}')">Ajouter</button></div></div>`;
+ }
+ app.innerHTML=h; prog();
+}
+function exRow(fid,id,txt,v,added,k){
+ return `<div class="ex"><div class="enonce"><b>${esc(id)}</b> &nbsp; ${esc(txt)} ${added?`<button class="sec" style="padding:2px 8px;font-size:.8rem" onclick="delEx('${fid}',${k})">supprimer</button>`:''}</div>
+ <div class="choix"><label><input type="radio" name="e${id}" ${v.type==='entrainement'?'checked':''} onchange="setI('${id}','type','entrainement')"> Entraînement</label>
+ <label><input type="radio" name="e${id}" ${v.type==='note'?'checked':''} onchange="setI('${id}','type','note')"> Noté</label>
+ <label><input type="radio" name="e${id}" ${v.type==='retirer'?'checked':''} onchange="setI('${id}','type','retirer')"> Retirer</label></div>
+ <div class="rem"><input type="text" placeholder="Remarque (facultatif)" value="${esc(v.rem||'')}" oninput="setI('${id}','rem',this.value)"></div></div>`;
+}
+function setF(fid,k,v){S.fam[fid][k]=v;save();}
+function setI(id,k,v){S.fam[id[0]].items[id]=S.fam[id[0]].items[id]||{};S.fam[id[0]].items[id][k]=v;save();}
+function addEx(fid){const el=document.getElementById("add"+fid); if(!el.value.trim())return; S.fam[fid].ajouts.push(el.value.trim()); el.value=""; save(); render();}
+function delEx(fid,k){S.fam[fid].ajouts.splice(k,1); save(); render();}
+document.getElementById("who").addEventListener("input",e=>{S.who=e.target.value;save();});
+function prog(){ let n=0,t=0; for(const f of FAM){ const s=S.fam[f.id]; t+=2+f.items.length+s.ajouts.length; if(s.methode_ok!==null)n++; if(s.interdite_ok!==null)n++; for(const id in s.items){ if(s.items[id].type)n++; } }
+ document.getElementById("prog").textContent=`${Math.min(n,t)} / ${t} réponses`; }
+async function exportJSON(){
+ if(!S.who){alert("Merci d'indiquer votre nom ou vos initiales en haut de la page.");return;}
+ const out={annotateur:S.who,date:new Date().toISOString(),familles:FAM.map(f=>{const s=S.fam[f.id];return{id:f.id,titre:f.titre,methode_proposee:f.methode,methode_ok:s.methode_ok,methode_corrigee:s.methode_txt,interdite_proposee:f.interdite,interdite_ok:s.interdite_ok,interdite_remarque:s.interdite_txt,
+  exercices:[...f.items.map((it,i)=>({id:f.id+(i+1),enonce:it,...(s.items[f.id+(i+1)]||{})})), ...s.ajouts.map((a,k)=>({id:f.id+"+"+(k+1),enonce:a,ajoute:true,...(s.items[f.id+"+"+(k+1)]||{})}))]};})};
+ const txt=JSON.stringify(out,null,1); const fname="exercices_"+S.who.replace(/\W+/g,"_")+".json";
+ const box=document.getElementById("result"); box.style.display="block";
+ document.getElementById("resultTxt").value=txt; box.scrollIntoView({behavior:"smooth"});
+ let saved=false;
+ try{ if(window.claude&&claude.use){ const dl=await claude.use("downloads"); if(dl){ await dl.save({filename:fname,data:txt}); saved=true; } } }catch(e){}
+ if(!saved){ try{ const blob=new Blob([txt],{type:"application/json"}); const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=fname; a.click(); }catch(e){} }
+}
+function copyResult(){ const ta=document.getElementById("resultTxt"); ta.select(); ta.setSelectionRange(0,1e9);
+ (navigator.clipboard?navigator.clipboard.writeText(ta.value):Promise.reject()).then(()=>{document.getElementById("copyMsg").textContent="Copié ! Collez-le dans WhatsApp ou un e-mail à El Hadji Bassirou Touré.";}).catch(()=>{document.execCommand("copy");document.getElementById("copyMsg").textContent="Texte sélectionné : faites Cmd/Ctrl+C puis collez-le dans WhatsApp ou un e-mail.";});
+}
+render();
+</script></body></html>

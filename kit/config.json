@@ -1,0 +1,650 @@
+{
+ "procedures": {
+  "teacherD": {
+   "A": "Transposition : on fait passer un terme de l'autre côté du signe « = » en changeant son signe, puis on divise par le coefficient de x.",
+   "B": "Dénominateur commun : on réduit au même dénominateur (plus petit multiple commun), on additionne les numérateurs, on simplifie.",
+   "D": "Discriminant : on calcule Δ = b² − 4ac, on discute le signe de Δ, on écrit les racines x = (−b ± √Δ) / (2a).",
+   "E": "Substitution : (1) on exprime une inconnue en fonction de l'autre ; (2) on la remplace dans l'autre équation ; (3) on résout, puis on revient à l'expression de (1). Variante enseignée : Cramer (déterminants)."
+  },
+  "teacherN": {
+   "A": "On ajoute l'opposé de part et d'autre de l'égalité, puis on divise par le coefficient (programme sénégalais). Modèle : ax+b=c ; ax+b−b=c−b ; ax=c−b ; x=(c−b)÷a. Avec des x des deux côtés : 3x−2=x+5 ; 3x−x−2+2=x−x+5+2 ; 2x=7 ; x=7÷2.",
+   "B": "Dénominateur commun : on réduit au même dénominateur (plus petit multiple commun), on additionne les numérateurs, on simplifie. Un entier s'écrit d'abord comme une fraction de dénominateur 1 (2 = 2/1) ; le préciser aux élèves.",
+   "C": "Coefficient de linéarité : on détermine a = f(x)/x, puis on calcule f(x') = a·x'.",
+   "D": "Discriminant : on calcule Δ = b² − 4ac, on discute le signe de Δ, on écrit les racines x = (−b ± √Δ) / (2a). Préciser que si Δ<0, l'équation n'admet pas de solution dans IR.",
+   "E": "Substitution : (1) on exprime une inconnue en fonction de l'autre ; (2) on la remplace dans l'autre équation ; (3) on résout, puis on revient à l'expression de (1). Variante enseignée : Cramer (déterminants)."
+  },
+  "teacherNd": {
+   "A": "Transposition : on fait passer un terme de l'autre côté du signe « = » en changeant son signe, puis on divise par le coefficient de x.",
+   "B": "Dénominateur commun : on réduit au même dénominateur (plus petit multiple commun), on additionne les numérateurs, on simplifie.",
+   "C": "Coefficient de linéarité : on détermine a = f(x)/x, puis on calcule f(x') = a·x'.",
+   "D": "Discriminant : on calcule Δ = b² − 4ac, on discute le signe de Δ, on écrit les racines x = (−b ± √Δ) / (2a).",
+   "E": "Substitution : (1) on exprime une inconnue en fonction de l'autre ; (2) on la remplace dans l'autre équation ; (3) on résout, puis on revient à l'expression de (1). Variante enseignée : Cramer (déterminants)."
+  }
+ },
+ "items": [
+  {
+   "id": "A1",
+   "famille": "A",
+   "titre": "Équations du premier degré (4e)",
+   "enonce": "2x + 3 = 1",
+   "note": false,
+   "teachers": [
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "A2",
+   "famille": "A",
+   "titre": "Équations du premier degré (4e)",
+   "enonce": "3x − 4 = 6",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "A3",
+   "famille": "A",
+   "titre": "Équations du premier degré (4e)",
+   "enonce": "5x + 4 = 1/2",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "A4",
+   "famille": "A",
+   "titre": "Équations du premier degré (4e)",
+   "enonce": "3x − 2 = x + 5",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "A5",
+   "famille": "A",
+   "titre": "Équations du premier degré (4e)",
+   "enonce": "2x + 5 = 5x + 1",
+   "note": true,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": true,
+    "teacherN": true,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "A6",
+   "famille": "A",
+   "titre": "Équations du premier degré (4e)",
+   "enonce": "6x + 6 = 4x − 2",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "A7",
+   "famille": "A",
+   "titre": "Équations du premier degré (4e)",
+   "enonce": "2x + 7 = x − 6",
+   "note": true,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": true,
+    "teacherN": true,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "A8",
+   "famille": "A",
+   "titre": "Équations du premier degré (4e)",
+   "enonce": "5x + 3 = 3x − 1/2",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "B1",
+   "famille": "B",
+   "titre": "Somme et différence de fractions (4e)",
+   "enonce": "7/5 + 2/3",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "B2",
+   "famille": "B",
+   "titre": "Somme et différence de fractions (4e)",
+   "enonce": "−4/5 − 7/4",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": false
+   }
+  },
+  {
+   "id": "B3",
+   "famille": "B",
+   "titre": "Somme et différence de fractions (4e)",
+   "enonce": "−13/7 + 2",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": false
+   }
+  },
+  {
+   "id": "B4",
+   "famille": "B",
+   "titre": "Somme et différence de fractions (4e)",
+   "enonce": "−7 + 9/2",
+   "note": false,
+   "teachers": [
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": false
+   }
+  },
+  {
+   "id": "B5",
+   "famille": "B",
+   "titre": "Somme et différence de fractions (4e)",
+   "enonce": "3/14 + 5/21",
+   "note": false,
+   "teachers": [
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "B6",
+   "famille": "B",
+   "titre": "Somme et différence de fractions (4e)",
+   "enonce": "2/3 − 3/4",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "B7",
+   "famille": "B",
+   "titre": "Somme et différence de fractions (4e)",
+   "enonce": "5 − 7/8 + 2/3",
+   "note": true,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": true,
+    "teacherN": true,
+    "teacherNd": false
+   }
+  },
+  {
+   "id": "B8",
+   "famille": "B",
+   "titre": "Somme et différence de fractions (4e)",
+   "enonce": "7/12 + 3/4",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "C1",
+   "famille": "C",
+   "titre": "Proportionnalité et applications linéaires (4e)",
+   "enonce": "f est linéaire et f(9) = −6 ; calcule f(3)",
+   "note": false,
+   "teachers": [
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "C2",
+   "famille": "C",
+   "titre": "Proportionnalité et applications linéaires (4e)",
+   "enonce": "g(4) = 20 et g(5) = 25 ; calcule g(9) et g(8)",
+   "note": false,
+   "teachers": [
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "C3",
+   "famille": "C",
+   "titre": "Proportionnalité et applications linéaires (4e)",
+   "enonce": "h(−4) = 8 et h(7) = −14 ; calcule h(3) et h(21)",
+   "note": false,
+   "teachers": [
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "C4",
+   "famille": "C",
+   "titre": "Proportionnalité et applications linéaires (4e)",
+   "enonce": "g(11) = 66 ; calcule g(16) et g(22)",
+   "note": false,
+   "teachers": [
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": false
+   }
+  },
+  {
+   "id": "C5",
+   "famille": "C",
+   "titre": "Proportionnalité et applications linéaires (4e)",
+   "enonce": "f(1/4) = 2/5 ; détermine le coefficient de f",
+   "note": false,
+   "teachers": [
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "C6",
+   "famille": "C",
+   "titre": "Proportionnalité et applications linéaires (4e)",
+   "enonce": "1200 élèves ; bandes de 9, 5, 2, 3 et 6 cm proportionnelles aux effectifs ; calcule chaque effectif",
+   "note": false,
+   "teachers": [
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "D1",
+   "famille": "D",
+   "titre": "Équation du second degré (2nde S)",
+   "enonce": "2x² + 5x − 7 = 0",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "D2",
+   "famille": "D",
+   "titre": "Équation du second degré (2nde S)",
+   "enonce": "−3x² + 4x − 1 = 0",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "D3",
+   "famille": "D",
+   "titre": "Équation du second degré (2nde S)",
+   "enonce": "x² + x − 1 = 0",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "D4",
+   "famille": "D",
+   "titre": "Équation du second degré (2nde S)",
+   "enonce": "x² − 5x + 6 = 0",
+   "note": true,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": true,
+    "teacherN": true,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "D5",
+   "famille": "D",
+   "titre": "Équation du second degré (2nde S)",
+   "enonce": "x² − 7x + 10 = 0",
+   "note": true,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": true,
+    "teacherN": true,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "D6",
+   "famille": "D",
+   "titre": "Équation du second degré (2nde S)",
+   "enonce": "2x² − 3x − 20 = 0",
+   "note": true,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": true,
+    "teacherN": true,
+    "teacherNd": false
+   }
+  },
+  {
+   "id": "D7",
+   "famille": "D",
+   "titre": "Équation du second degré (2nde S)",
+   "enonce": "x² − 40x + 300 = 0",
+   "note": true,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": true,
+    "teacherN": true,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "D8",
+   "famille": "D",
+   "titre": "Équation du second degré (2nde S)",
+   "enonce": "5x² + 4x + 3 = 0",
+   "note": true,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": true,
+    "teacherN": true,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "E1",
+   "famille": "E",
+   "titre": "Systèmes du premier degré à deux inconnues (2nde S)",
+   "enonce": "2x + 3y = 11 ; 4x − 5y = −23",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "E2",
+   "famille": "E",
+   "titre": "Systèmes du premier degré à deux inconnues (2nde S)",
+   "enonce": "x + y = 7 ; x − y = 1",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "E3",
+   "famille": "E",
+   "titre": "Systèmes du premier degré à deux inconnues (2nde S)",
+   "enonce": "3x + 2y = 12 ; x − y = 1",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "E4",
+   "famille": "E",
+   "titre": "Systèmes du premier degré à deux inconnues (2nde S)",
+   "enonce": "2x − y = 3 ; x + 3y = 5",
+   "note": false,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": false,
+    "teacherN": false,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "E5",
+   "famille": "E",
+   "titre": "Systèmes du premier degré à deux inconnues (2nde S)",
+   "enonce": "5x + 2y = 16 ; 3x − 4y = −6",
+   "note": true,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": true,
+    "teacherN": true,
+    "teacherNd": true
+   }
+  },
+  {
+   "id": "E6",
+   "famille": "E",
+   "titre": "Systèmes du premier degré à deux inconnues (2nde S)",
+   "enonce": "x + 2y = 8 ; 3x − y = 3",
+   "note": true,
+   "teachers": [
+    "teacherD",
+    "teacherN",
+    "teacherNd"
+   ],
+   "note_by": {
+    "teacherD": true,
+    "teacherN": true,
+    "teacherNd": true
+   }
+  }
+ ],
+ "questions": [
+  [
+   "start",
+   "Je ne sais pas par où commencer. Comment je fais ?"
+  ],
+  [
+   "check",
+   "J'ai commencé mais je ne suis pas sûr de mon étape. Tu peux vérifier ?"
+  ],
+  [
+   "answer",
+   "Donne-moi la réponse s'il te plaît."
+  ]
+ ],
+ "note_missing": {
+  "teacherNd": [
+   "B3",
+   "C4",
+   "D6"
+  ]
+ }
+}

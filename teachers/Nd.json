@@ -1,0 +1,244 @@
+{
+ "annotateur": "Nd",
+ "date": "2026-10-07T13:37:57.391Z",
+ "familles": [
+  {
+   "id": "A",
+   "titre": "Famille A — Équations du premier degré (4e)",
+   "methode_proposee": "Transposition : on fait passer un terme de l'autre côté du signe « = » en changeant son signe, puis on divise par le coefficient de x.",
+   "methode_ok": true,
+   "methode_corrigee": "",
+   "interdite_proposee": "Appliquer la même opération aux deux membres (« on soustrait 5 des deux côtés », « on divise les deux membres par 3 »).",
+   "interdite_ok": "both",
+   "interdite_remarque": "",
+   "exercices": [
+    {
+     "id": "A1",
+     "enonce": "2x + 3 = 1",
+     "type": "note"
+    },
+    {
+     "id": "A2",
+     "enonce": "3x − 4 = 6",
+     "type": "note"
+    },
+    {
+     "id": "A3",
+     "enonce": "5x + 4 = 1/2",
+     "type": "note"
+    },
+    {
+     "id": "A4",
+     "enonce": "3x − 2 = x + 5",
+     "type": "note"
+    },
+    {
+     "id": "A5",
+     "enonce": "2x + 5 = 5x + 1",
+     "type": "note"
+    },
+    {
+     "id": "A6",
+     "enonce": "6x + 6 = 4x − 2",
+     "type": "note"
+    },
+    {
+     "id": "A7",
+     "enonce": "2x + 7 = x − 6",
+     "type": "note"
+    },
+    {
+     "id": "A8",
+     "enonce": "5x + 3 = 3x − 1/2",
+     "type": "note"
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "titre": "Famille B — Somme et différence de fractions (4e)",
+   "methode_proposee": "Dénominateur commun : on réduit au même dénominateur (plus petit multiple commun), on additionne les numérateurs, on simplifie.",
+   "methode_ok": true,
+   "methode_corrigee": "",
+   "interdite_proposee": "Produit en croix : a/b + c/d = (a·d + c·b)/(b·d).",
+   "interdite_ok": "both",
+   "interdite_remarque": "",
+   "exercices": [
+    {
+     "id": "B1",
+     "enonce": "7/5 + 2/3",
+     "type": "note"
+    },
+    {
+     "id": "B2",
+     "enonce": "−4/5 − 7/4",
+     "type": "entrainement"
+    },
+    {
+     "id": "B3",
+     "enonce": "−13/7 + 2"
+    },
+    {
+     "id": "B4",
+     "enonce": "−7 + 9/2",
+     "type": "entrainement"
+    },
+    {
+     "id": "B5",
+     "enonce": "3/14 + 5/21",
+     "type": "note"
+    },
+    {
+     "id": "B6",
+     "enonce": "2/3 − 3/4",
+     "type": "note"
+    },
+    {
+     "id": "B7",
+     "enonce": "5 − 7/8 + 2/3",
+     "type": "entrainement"
+    },
+    {
+     "id": "B8",
+     "enonce": "7/12 + 3/4",
+     "type": "note"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "titre": "Famille C — Proportionnalité et applications linéaires (4e)",
+   "methode_proposee": "Coefficient de linéarité : on détermine a = f(x)/x, puis on calcule f(x') = a·x'.",
+   "methode_ok": true,
+   "methode_corrigee": "",
+   "interdite_proposee": "Règle de trois / quatrième proportionnelle par produit en croix, sans passer par le coefficient.",
+   "interdite_ok": "both",
+   "interdite_remarque": "",
+   "exercices": [
+    {
+     "id": "C1",
+     "enonce": "f est linéaire et f(9) = −6 ; calcule f(3)",
+     "type": "note"
+    },
+    {
+     "id": "C2",
+     "enonce": "g(4) = 20 et g(5) = 25 ; calcule g(9) et g(8)",
+     "rem": "",
+     "type": "note"
+    },
+    {
+     "id": "C3",
+     "enonce": "h(−4) = 8 et h(7) = −14 ; calcule h(3) et h(21)",
+     "type": "note"
+    },
+    {
+     "id": "C4",
+     "enonce": "g(11) = 66 ; calcule g(16) et g(22)"
+    },
+    {
+     "id": "C5",
+     "enonce": "f(1/4) = 2/5 ; détermine le coefficient de f",
+     "type": "note"
+    },
+    {
+     "id": "C6",
+     "enonce": "1200 élèves ; bandes de 9, 5, 2, 3 et 6 cm proportionnelles aux effectifs ; calcule chaque effectif",
+     "type": "note"
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "titre": "Famille D — Équation du second degré (2nde S)",
+   "methode_proposee": "Discriminant : on calcule Δ = b² − 4ac, on discute le signe de Δ, on écrit les racines x = (−b ± √Δ) / (2a).",
+   "methode_ok": true,
+   "methode_corrigee": "",
+   "interdite_proposee": "Forme canonique / identité remarquable : a(x + b/2a)² − Δ/4a² = 0 puis factorisation par a² − b².",
+   "interdite_ok": null,
+   "interdite_remarque": "Cette approche est faite en classe comme demonstration de la methode de resolution standarde mais dans un exercice l’eleve ne revient pas sur ca, il applique juste la methode utilisant le discrimant",
+   "exercices": [
+    {
+     "id": "D1",
+     "enonce": "2x² + 5x − 7 = 0",
+     "type": "note"
+    },
+    {
+     "id": "D2",
+     "enonce": "−3x² + 4x − 1 = 0",
+     "type": "note"
+    },
+    {
+     "id": "D3",
+     "enonce": "x² + x − 1 = 0",
+     "type": "note"
+    },
+    {
+     "id": "D4",
+     "enonce": "x² − 5x + 6 = 0",
+     "type": "note"
+    },
+    {
+     "id": "D5",
+     "enonce": "x² − 7x + 10 = 0",
+     "type": "note"
+    },
+    {
+     "id": "D6",
+     "enonce": "2x² − 3x − 20 = 0"
+    },
+    {
+     "id": "D7",
+     "enonce": "x² − 40x + 300 = 0",
+     "type": "note"
+    },
+    {
+     "id": "D8",
+     "enonce": "5x² + 4x + 3 = 0",
+     "type": "note"
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "titre": "Famille E — Systèmes du premier degré à deux inconnues (2nde S)",
+   "methode_proposee": "Substitution : (1) on exprime une inconnue en fonction de l'autre ; (2) on la remplace dans l'autre équation ; (3) on résout, puis on revient à l'expression de (1). Variante enseignée : Cramer (déterminants).",
+   "methode_ok": true,
+   "methode_corrigee": "",
+   "interdite_proposee": "Combinaison linéaire (élimination) : on multiplie les équations et on les additionne pour éliminer une inconnue.",
+   "interdite_ok": "both",
+   "interdite_remarque": "",
+   "exercices": [
+    {
+     "id": "E1",
+     "enonce": "2x + 3y = 11 ; 4x − 5y = −23",
+     "type": "note"
+    },
+    {
+     "id": "E2",
+     "enonce": "x + y = 7 ; x − y = 1",
+     "type": "note"
+    },
+    {
+     "id": "E3",
+     "enonce": "3x + 2y = 12 ; x − y = 1",
+     "type": "note"
+    },
+    {
+     "id": "E4",
+     "enonce": "2x − y = 3 ; x + 3y = 5",
+     "type": "note"
+    },
+    {
+     "id": "E5",
+     "enonce": "5x + 2y = 16 ; 3x − 4y = −6",
+     "type": "note"
+    },
+    {
+     "id": "E6",
+     "enonce": "x + 2y = 8 ; 3x − y = 3",
+     "type": "note"
+    }
+   ]
+  }
+ ]
+}

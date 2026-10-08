@@ -1,0 +1,43 @@
+{
+ "annotateur": "N",
+ "familles": [
+  {
+   "id": "A",
+   "methode_ok": false,
+   "methode_corrigee": "On ajoute l'opposé de part et d'autre de l'égalité et après on divise par le coefficient. C'est ce que dit le programme Sénégalais.\nax+b=c\nax+b-b=c-b\nax=c-b\nx=(c-b)÷a",
+   "interdite_ok": "both",
+   "rem_A4": "3x-2=x+5 , 3x-x-2+2=x-x+5+2, 2x=7, x=7÷2",
+   "exercices": "tous entrainement"
+  },
+  {
+   "id": "B",
+   "methode_ok": true,
+   "methode_corrigee": "",
+   "interdite_ok": "both",
+   "rem": "2=2÷1, c'est important de le préciser aux élèves.",
+   "exercices": "tous entrainement"
+  },
+  {
+   "id": "C",
+   "methode_ok": true,
+   "methode_corrigee": "",
+   "interdite_ok": true,
+   "exercices": "tous entrainement"
+  },
+  {
+   "id": "D",
+   "methode_ok": true,
+   "methode_corrigee": "Il faut préciser que si Δ<0, l'équation n'admet pas de solution dans IR.",
+   "interdite_ok": "both",
+   "exercices": "tous entrainement"
+  },
+  {
+   "id": "E",
+   "methode_ok": true,
+   "methode_corrigee": "",
+   "interdite_ok": "both",
+   "interdite_remarque": "Le programme dit si le déterminant est nul on utilise les méthodes traditionnelles (combinaison linéaire, substitution, comparaison, graphique)",
+   "exercices": "tous entrainement"
+  }
+ ]
+}
